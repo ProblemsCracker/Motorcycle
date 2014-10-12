@@ -1,0 +1,41 @@
+/* CSS Document */
+body
+{
+background:url(back.png);
+font-size:20px;
+}
+.rightTop
+{
+	text-align:right;
+	width:100%;
+	font-size:20px;
+}
+.container
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;	
+}
+.register
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+}
+.detail
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:500px;
+}
+.topBar
+{
+	margin:0;
+	border-bottom:solid #C0F;	
+}
+.button
+{
+	margin-left:auto;
+	margin-right:auto;
+	width:100px;
+}
