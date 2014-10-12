@@ -1,2 +1,0 @@
-<?php echo '<h1 style="text-align:center">My Order List</h1><table class="table1" width="100%" data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-table ui-table-columntoggle" data-column-btn-theme="b">
-<thead><tr><th>Product Name</th><th>Description</th><th>Category</th><th>Unit Price</th><th>Qty</th><th>Total Price</th><th>Transaction Time</th><th data-priority="persist">More</th></tr></thead>';?>
