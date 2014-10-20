@@ -12,7 +12,7 @@ $(document).ready(function(){
 }); 
 </script>";
 else
-	echo "<link rel='stylesheet' type='text/css' href='../css/default.css'>";
+	echo "<link href='/CodeIgniter/css/default.css' rel='stylesheet' type='text/css' >";
 ?>
 <body>
 <div data-role="page">

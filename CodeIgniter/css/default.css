@@ -2,9 +2,11 @@
 
 body
 {
-background:url(back.png);
+background:url(/CodeIgniter/image/backgrounds/index_back.jpg); 
+background-size: cover;
 font-size:20px;
 }
+
 .rightTop
 {
 	text-align:right;

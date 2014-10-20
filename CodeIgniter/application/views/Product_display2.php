@@ -2,8 +2,8 @@
 <ul id="product_line" style="list-style-type:none;  text-align:center; margin-right:2%;margin-left:2%" data-role="listview">
 		<li id="image">
 		<?php if($productImage==null) 
-		echo "<img src='../../../../../../../../../../CodeIgniter/image/product1.png' width='80%'>";
-		else echo"<img src='../../../../../../../../../../CodeIgniter/image/".$productImage."' width='80%'>";
+		echo "<img border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/product1.png' width='80%'>";
+		else echo"<img border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/".$productImage."' width='80%'>";
 		?></li>
         <li style="font-variant:small-caps; font-size:24px;text-align:center;" data-role="list-divider"><?php echo $productName?></li>
          <li id='space'>space</li>

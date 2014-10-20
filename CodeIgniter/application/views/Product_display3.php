@@ -65,8 +65,8 @@ function Confirm()
         <div id="div1" style="display:none; text-align:center">
 		<?php
 		 if($productImage==null) 
-		echo "<img src='../../../../../../../../../../CodeIgniter/image/product1.png'>";
-		else echo"<img src='../../../../../../../../../../CodeIgniter/image/".$productImage."'>";
+		echo "<img border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/product1.png'>";
+		else echo"<img border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/".$productImage."'>";
 		?></div>
         </li>
         <li style="text-align:center; font-variant:small-caps; font-size:24px" data-role="list-divider"><?php echo $productName?></li>
