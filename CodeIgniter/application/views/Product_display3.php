@@ -153,7 +153,6 @@ function Confirm()
       <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
     </ul>
    </div>
-
 </div>
 
 </body>
