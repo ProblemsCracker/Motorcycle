@@ -95,5 +95,21 @@ function Confirm()
         <li style="visibility:hidden">space</li>
 </ul>
 </div>
+
+<div>
+	<div class="container">
+    <div>
+        <h2>My Profile</h2>
+    </div>
+    <hr/>
+    <ul class="nav nav-tabs" role="tablist" id="myTab">
+      <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">General Information</a></li>
+      <li role="presentation"><a href="#upload" role="tab" data-toggle="tab">My Upload Videos</a></li>
+      <li role="presentation"><a href="#solution" role="tab" data-toggle="tab">My Edited Videos</a></li>
+      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+    </ul>
+   </div>
+</div>
+
 </body>
 </html>
