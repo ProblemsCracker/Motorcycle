@@ -137,8 +137,7 @@ function Confirm()
 	</div>
 	
 </div>
-
-<<<<<<< HEAD
+</div>
 <div>
 	<div class="container">
     <div>
@@ -152,8 +151,7 @@ function Confirm()
       <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
     </ul>
    </div>
-=======
->>>>>>> origin/master
+
 </div>
 
 </body>
