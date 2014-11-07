@@ -66,8 +66,10 @@ function Confirm()
 		<div id="div1" style="display:none; text-align:center">
 		<?php
 		 if($productImage==null) 
-		echo "<img border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/product1.png'>";
-		else echo"<img border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/".$productImage."'>";
+		echo "<img style='width: 60%; height: 50%' 
+				border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/product1.png'>";
+		else echo"<img style='width: 60%; height: 50%'
+				border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/".$productImage."'>";
 		?></div>
 	</div>
 	
@@ -117,14 +119,14 @@ function Confirm()
 				
 				
 				<li style="font-size:20px;">
-					<button type="button" class="btn btn-default">
-						<a href='#' onClick="Confirm()">Add to Cart</a>
+					<button href='#' onClick="Confirm()" type="button" class="btn btn-default">
+						Add to Cart
 					</button>
 				</li>
 				<li style="visibility:hidden">space</li>
 				<li style="font-size:20px;">
-					<button type="button" class="btn btn-default">
-						<a href="../../Main_page">Go Back</a>
+					<button href="../../Main_page" type="button" class="btn btn-default">
+						Go Back
 					</button>
 				</li>
 				
