@@ -139,8 +139,8 @@ function Confirm()
 	</div>
 	
 </div>
-</div>
-<div>
+
+
 	<div class="container">
     <div>
         <h2>My Profile</h2>
