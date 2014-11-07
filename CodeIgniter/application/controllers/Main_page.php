@@ -34,6 +34,7 @@ class Main_page extends CI_Controller{
 			$this->load->view('Error_log');
 			
 		$this->load->view('Header');
+		$this->load->view('Bread');
 		$this->load->view('Search');
 		foreach($res1 as $category)
 		{
@@ -55,6 +56,7 @@ class Main_page extends CI_Controller{
 	{
 		$this->load->view('Session_validation');
 		$this->load->view('Header');
+		$this->load->view('Bread2');
 		$res1=$this->Main->productInfo($productID);
 		if(isset($res1[0]))
 		{
