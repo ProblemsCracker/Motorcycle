@@ -56,103 +56,115 @@ function Confirm()
  .num{border-width:1px;text-align:center;text-indent:0px;line-height:15px\9;padding:0;margin-top:10px;width:25px;}
  .J_jia{}
  .J_jian{}
+ .showImage{
+ 	border-style: solid;
+ 	border-color: lightblue;
+    border-width: 2px;
+ 	width: 70%; 
+ 	height: 50%;
+ }
 </style>
 </head>
 <body>
 <div style="margin-top:50px">
 
-<div class="container">
-	<div class="col-sm-6">
-		<div id="div1" style="display:none; text-align:center">
-		<?php
-		 if($productImage==null) 
-		echo "<img style='width: 60%; height: 50%' 
-				border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/product1.png'>";
-		else echo"<img style='width: 60%; height: 50%'
-				border='1px' solid #CCC src='../../../../../../../../../../CodeIgniter/image/".$productImage."'>";
-		?></div>
-	</div>
-	
-	<!-- display product information -->
-	<div class="col-sm-3">
+	<div class="container">
+		<div class="col-sm-6">
+			<div id="div1" style="display:none; text-align:center">
+			<?php
+			 if($productImage == null) 
+			echo "<img class='showImage'  
+					src='../../../../../../../../../../CodeIgniter/image/product1.png'>";
+			else echo"<img class='showImage'
+					src='../../../../../../../../../../CodeIgniter/image/".$productImage."'>";
+			?></div>
+		</div>
 		
-		<ul id="product_line2"  style="list-style-type:none; text-align:center;margin-right:auto;margin-left:auto" 
-			data-role="listview">
-		
-				<li style="text-align:center; font-variant:small-caps; font-size:24px" data-role="list-divider">
-					<?php echo "<span style='font-size:30pt; font-weight: bold'>".$productName."</span>" ?>
-				</li>
-				
-				<li style="visibility:hidden">space</li>
-				<li style="font-size:24px; color:#999"> Price: 
-				
-				<?php 
-					if(isset($specialPrice))
-					{
-						echo "<span style='color:#F60; text-decoration:line-through'>$".$productPrice."</span><li><span style='color:#F00;font-size:30px; font-weight:bold;'>SALE: $".$specialPrice."</span></li>";
-					}
-					else
-					{
-						echo "<span style='color:#F60;'>$".$productPrice."</span><li style='visibility:hidden'>space</li><li style='visibility:hidden'>space</li>";	
-					}
-				?>
-				
-				<!--<li><?php echo $productDescription?></li>-->
-				<!--<li style="visibility:hidden">space</li>-->
-				 
-				<li style="font-size:20px;">Qty: 
-					<li class="num_box">
-						<button class="J_jia btn btn-default">
-							&nbsp;&nbsp; + &nbsp;&nbsp;
-						</button>
+		<!-- display product information -->
+		<div class="col-sm-3">
+			
+			<ul id="product_line2"  style="list-style-type:none; text-align:center;margin-right:auto;margin-left:auto" 
+				data-role="listview">
+			
+					<li style="text-align:center; font-variant:small-caps; font-size:24px" data-role="list-divider">
+						<?php echo "<span style='font-size:30pt; font-weight: bold'>".$productName."</span>" ?>
+					</li>
 					
-						<label>
-							<input type="text" class="num" name="productQuantity"/>
-						</label>
+					<li style="visibility:hidden">space</li>
+					<li style="font-size:24px; color:#999"> Price: 
 					
-						<button class="J_jian btn btn-default">
-							&nbsp;&nbsp; - &nbsp;&nbsp;
+					<?php 
+						if(isset($specialPrice))
+						{
+							echo "<span style='color:#F60; text-decoration:line-through'>$".$productPrice."</span><li><span style='color:#F00;font-size:30px; font-weight:bold;'>SALE: $".$specialPrice."</span></li>";
+						}
+						else
+						{
+							echo "<span style='color:#F60;'>$".$productPrice."</span><li style='visibility:hidden'>space</li><li style='visibility:hidden'>space</li>";	
+						}
+					?>
+					
+					<!--<li><?php echo $productDescription?></li>-->
+					<!--<li style="visibility:hidden">space</li>-->
+					 
+					<li style="font-size:20px;">Qty: 
+						<li class="num_box">
+							<button class="J_jia btn btn-default">
+								&nbsp;&nbsp; + &nbsp;&nbsp;
+							</button>
+						
+							<label>
+								<input type="text" class="num" name="productQuantity"/>
+							</label>
+						
+							<button class="J_jian btn btn-default">
+								&nbsp;&nbsp; - &nbsp;&nbsp;
+							</button>
+						</li>
+					</li>
+					<li style="visibility:hidden">space</li>
+					
+					
+					<li style="font-size:20px;">
+						<button href='#' onClick="Confirm()" type="button" class="btn btn-default">
+							Add to Cart
 						</button>
 					</li>
-				</li>
-				<li style="visibility:hidden">space</li>
-				
-				
-				<li style="font-size:20px;">
-					<button href='#' onClick="Confirm()" type="button" class="btn btn-default">
-						Add to Cart
-					</button>
-				</li>
-				<li style="visibility:hidden">space</li>
-				<li style="font-size:20px;">
-					<button href="../../Main_page" type="button" class="btn btn-default">
-						Go Back
-					</button>
-				</li>
-				
-				
-				<li style="visibility:hidden">space</li>
-				<li style="visibility:hidden">space</li>
-		
-		</ul>
+					<li style="visibility:hidden">space</li>
+					<li style="font-size:20px;">
+						<a href="../../Main_page" type="button" class="btn btn-default">
+							Go Back
+						</a>
+					</li>
+					
+					
+					<li style="visibility:hidden">space</li>
+					<li style="visibility:hidden">space</li>
+			
+			</ul>
+			
+		</div>
 		
 	</div>
-	
-</div>
 
-<div>
-	<div class="container">
-    <div>
-        <h2>My Profile</h2>
-    </div>
-    <hr/>
-    <ul class="nav nav-tabs" role="tablist" id="myTab">
-      <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">General Information</a></li>
-      <li role="presentation"><a href="#upload" role="tab" data-toggle="tab">My Upload Videos</a></li>
-      <li role="presentation"><a href="#solution" role="tab" data-toggle="tab">My Edited Videos</a></li>
-      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
-    </ul>
-   </div>
+	<div>
+		<div class="container">
+
+		    <div>
+		        <h2>My Profile</h2>
+		    </div>
+
+		    <hr/>
+
+		    <ul class="nav nav-tabs" role="tablist" id="myTab">
+		      <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">General Information</a></li>
+		      <li role="presentation"><a href="#upload" role="tab" data-toggle="tab">My Upload Videos</a></li>
+		      <li role="presentation"><a href="#solution" role="tab" data-toggle="tab">My Edited Videos</a></li>
+		      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+		    </ul>
+
+	  	</div>
+	</div>
 </div>
 
 </body>
