@@ -1,5 +1,4 @@
 /* CSS Document */
-
 body
 {
 background:url(back.png);
@@ -39,28 +38,4 @@ font-size:20px;
 	margin-left:auto;
 	margin-right:auto;
 	width:100px;
-}
-#special
-{color:#F00;font-size:30px; font-weight:bold;}
-
-#price
-{display:none}
-
-#space
-{visibility:hidden}
-
-#product_line
-{
-	 width:16%; 
-	 text-align:center;
-	 float:left;
-}
-
-.table1
-{
- 	 text-align:center;
-}
-.main
-{
-	text-align:center;	
 }

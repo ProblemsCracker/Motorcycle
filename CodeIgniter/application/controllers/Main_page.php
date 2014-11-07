@@ -7,6 +7,7 @@ class Main_page extends CI_Controller{
 		$this->load->model('User');
 		$this->load->library('session');
 		$this->load->library('user_agent');
+		$this->load->library('ftp');
 		$this->load->view('Site_header');
 	}
 	function index(){
@@ -68,7 +69,7 @@ class Main_page extends CI_Controller{
 	}
 	function login()
 	{
-		
+			$this->load->view('Header');
 			$this->load->view('Login');
 			$this->load->view('Site_feet');
 	}
@@ -78,6 +79,7 @@ class Main_page extends CI_Controller{
 	}
 	function profile($username)
 	{
+			$this->load->view('Header');
 			$res=$this->User->profile($username);
 			$this->load->view('Profile',$res[0]);	
 			$this->load->view('Site_feet');
@@ -105,6 +107,7 @@ class Main_page extends CI_Controller{
 	}
 	function register()
 	{
+		$this->load->view('Header');
 		$this->load->view('Register');
 		$this->load->view('Site_feet');
 	}

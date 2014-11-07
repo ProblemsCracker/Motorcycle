@@ -14,7 +14,27 @@ $(document).ready(function(){
 else
 	echo "<link href='/CodeIgniter/css/default.css' rel='stylesheet' type='text/css' >";
 ?>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	
+    <title>Carousel Template for Bootstrap</title>
+        <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../docs-assets/js/html5shiv.js"></script>
+      <script src="../../docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
 <body>
+
 <div data-role="page">
 <div data-role="content">
 <div class="topBar">

@@ -4,17 +4,50 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>prelogin</title>
 
-<link type="text/css" href="css/login.css" rel="stylesheet" />	
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../docs-assets/js/html5shiv.js"></script>
+      <script src="../../docs-assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
 </head>
 
 <body>
-<form action="../Main_page" method="post">
-<p class="main">
-	<label>Username: </label><input type="text" name='username' value=""/>
-    <br/><br/>
-    <label>Password:&nbsp;</label> <input type="password" name="password" value=""><br/><br/>
-    <p class="main"><input data-inline='true' data-role='button' type="submit" value="Submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input data-inline='true' data-role='button' type="button" value="Register" onclick="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page/register'">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input data-inline='true' data-role='button' type="button" value="GoBack" onclick="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page'"></p>
-</p>
+<div class="register">
+<div class="well">
+<form action="../Main_page" method="post" class="form-horizontal">
+	<div class="form-group">
+	<label style="font-size:20px">Username: </label>
+     <div class="col-sm-12">
+    	<input class="form-control" type="text" name='username' value=""/>
+        </div>
+    </div>
+    <div class="form-group">
+    <label style="font-size:20px">Password:&nbsp;</label> 
+     	<div class="col-sm-12">
+    	<input class="form-control" type="password" name="password" value="">
+        </div>
+    </div>
+    <br/>
+    <div class="container">
+     <div class="form-group">
+    <input class="btn btn-primary btn-lg" data-inline='true' data-role='button' type="submit" value="Submit">
+    <input class="btn btn-info btn-lg" data-inline='true' data-role='button' type="button" value="Register" onclick="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page/register'">
+    <input class="btn btn-danger btn-lg" data-inline='true' data-role='button' type="button" value="GoBack" onclick="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page'">
+     </div>
+     </div>
 </form>
+</div>
+
+</div>
 </body>
 </html>

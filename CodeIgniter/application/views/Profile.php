@@ -70,6 +70,8 @@ $(document).ready(function() {
 		echo "value=".$email?>></td>
    	</tr>  
 </table>
+
+   
 <br/>
 <p align="center" style=" color:red;">* Must Fill</p>
 <table class="button" align="center">

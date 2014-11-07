@@ -2,9 +2,11 @@
 
 body
 {
-background:url(/CodeIgniter/image/backgrounds/index_back.jpg); 
+background:url(../image/backgrounds/index_back.jpg); 
 background-size: cover;
 font-size:20px;
+position: relative;
+top: 100px;
 }
 
 .rightTop
@@ -13,12 +15,7 @@ font-size:20px;
 	width:100%;
 	font-size:20px;
 }
-.container
-{
-	margin-left:auto;
-	margin-right:auto;
-	width:960px;	
-}
+
 .register
 {
 	margin-left:auto;

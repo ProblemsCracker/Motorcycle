@@ -32,45 +32,59 @@ $(document).ready(function() {
   <style type="text/css">
     label.error { font-size:12px; color: red; display:block}
   </style>
+      <!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 </head>
 <body>
 <div class="register">
 <h1 style="text-align:center"><span id="div1" style="display:none">Welcome</span><span id="div2" style="display:none"> New</span><span id="div3" style="display:none"> Customer</span></h1>
 <div id="div4" style="display:none">
-<form id="form1" name='f1' method="post" action='../../../../../../../../../../CodeIgniter/index.php/Main_page/store_register'>
-<table width="500px" align="center">
-    <tr>
-		<th>*Username:</th>
-        <td><input type="text" maxlength="30" name="username"></td>
-   	</tr>
-	<tr>
-		<th>*Password:</th>
-        <td><input type="password" maxlength="32" name="password"></td>
-   	</tr>
-	<tr>
-		<th>*First Name:</th>
-        <td><input type="text" maxlength="30" name="firstName"></td>
-   	</tr>
-	<tr>
-		<th>*Last Name:</th>
-        <td><input type="text" maxlength="30" name="lastName"></td>
-   	</tr>    
-	<tr>
-		<th>Phone Number:</th>
-        <td><input type="text" name="phone" maxlength="10"></td>
-   	</tr>     
-  	<tr>
-		<th>Email: </th>
-        <td><input type="text" name="email" maxlength="35"></td>
-   	</tr>  
-</table>
+<div class="well">
+<form id="form1" class="form-horizontal" role="form" name='f1' method="post" action='../../../../../../../../../../CodeIgniter/index.php/Main_page/store_register'>
+<div class="form-group">
+    <label for="username" class="col-sm-2 control-label">*Username</label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" placeholder="Username" name="username">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="username" class="col-sm-2 control-label">*Password</label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" placeholder="Password" name="password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="firstName" class="col-sm-2 control-label">*FirstName</label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" placeholder="First Name" name="firstName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="username" class="col-sm-2 control-label">*LastName</label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" placeholder="Last Name" name="lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="username" class="col-sm-2 control-label">PhoneNumber</label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" placeholder="Phone Number" name="phone">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="username" class="col-sm-2 control-label">EmailAddress</label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" placeholder="Email" name="phone">
+    </div>
+  </div>
 <br/>
-<p align="center" style="color:red;">* Must Fill</p>
-<table class="button" align="center">
-<tr><td><input  type="submit" value="Save"></td>
-<td><input  type="button" value="Back" onclick="goBack()"></td></tr>
-</table>
-</form>   
+<div class="container">
+<input  type="submit" value="Save" class="btn btn-lg btn-primary">
+<input  type="button" value="Back" onclick="goBack()"  class="btn btn-lg btn-danger">
+</div>
+
+</form> 
+</div>  
 </div>
 </div>
   
