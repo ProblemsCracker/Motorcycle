@@ -12,9 +12,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script>
 $(document).ready(function(){
-	$("#transbox1").css("display","block");
-	$("#transbox2").css("display","none");
-	$("#transbox3").css("display","none");
+    $("#div1").fadeIn(1000);
+    $("#div2").fadeIn(2000);
+    $("#div3").fadeIn(3000);
+	$("#div4").fadeIn(3000);
 });
 $(document).ready(function() {
       $("#form1").validate({
@@ -32,20 +33,6 @@ $(document).ready(function() {
         }
       });
     });
-function recommend(){
-	$("#transbox1").css("display","none");
-	$("#transbox2").css("display","block");
-}
-
-function switch1(){
-	$("#transbox2").css("display","none");
-	$("#transbox3").css("display","block");
-}
-
-function switch2(){
-	location.assign("http://localhost/CodeIgniter/index.php/Main_page/info/4");
-}
-
 </script>
   <style type="text/css">
     label.error { font-size:12px; color: red; display:block}
@@ -81,10 +68,8 @@ div.transbox p {
 }
 table,th,td {
 	border: 1px solid black;
-	border: 10px;
-	margin:30px;
+	border: none;
 }
-
 
 table {
 	text-align: center;
@@ -99,43 +84,19 @@ table {
 </head>
 
 <body class="opache">
-<div class="transbox" id="transbox1">
+<div class="transbox">
 <table>
 		<tr>
-			<td><img src="../image/novice.png"></td>
-			<td><img src="../image/expert.png"></td>
+			<td><img src="../image/novice.bmp"></td>
+			<td><img src="../image/expert.bmp"></td>
 		</tr>
 		<tr>
-			<td><button class="btn btn-success btn-lg " type="button" onclick=recommend()>Recommend a model for me		</button></td>
-			<td><button class="btn btn-success btn-lg " type="button" onclick=location.assign("/CodeIgniter/index.php/Main_page")>Go back to site		</button></td>
+			<td><button class="btn btn-success btn-lg " type="button">Fit a model now!		</button></td>
+			<td><button class="btn btn-success btn-lg " type="button">Go back to site		</button></td>
 		</tr>
 </table>
 
-</div>
 
-
-<div class="transbox" id="transbox2">
-<h1>Which model looks best for you?</h1>
-<h2>Click on any</h2>
-<table>
-		<tr onclick=switch1()>
-			<td><img src="../image/200671310194680984_p.jpg"></td>
-			<td><img src="../image/pic1.jpg"></td>
-			<td><img src="../image/slider1.png"></td>
-		</tr>
-</table>
-</div>
-
-<div class="transbox" id="transbox3">
-<h1>Final step for us to learn you interest before make recommendation</h1>
-<h2>Click on any</h2>
-<table>
-		<tr onclick=switch2()>
-			<td><img src="../image/softa8_p.jpg"></td>
-			<td><img src="../image/moteos24_p.jpg"></td>
-			<td><img src="../image/motocycle1.jpg"></td>
-		</tr>
-</table>
 </div>
 
 </body>

@@ -1,2 +1,13 @@
-<?php echo '<h1 style="text-align:center">My Cart</h1><table class="table1" width="100%" data-role="table" id="table-column-toggle" data-mode="columntoggle" class="ui-table ui-table-columntoggle" data-column-btn-theme="b">
-<thead><tr><th>Product Name</th><th data-priority="1">Description</th><th>Category</th><th>Unit Price</th><th>Special Price</th><th>Qty</th><th>Total Price</th><th data-priority="persist">Remove</th><th data-priority="persist">Change</th></tr></thead><tbody>'; ?>
+<?php echo '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"><h1 style="text-align:center">My Cart</h1>
+<table  width="100%" data-role="table" id="table-column-toggle" data-mode="columntoggle" class="table table-striped" data-column-btn-theme="b">
+<thead><tr><th class="success">Product Name</th>
+<th class="success" data-priority="1">Description</th>
+<th class="success">Category</th>
+<th class="success">Unit Price</th>
+<th class="success">Special Price</th>
+<th class="success">Qty</th>
+<th class="success">Total Price</th>
+<th class="success" data-priority="persist">Remove</th>
+<th class="success" data-priority="persist">Change</th>
+<th class="success" >Picture</th>
+</tr></thead><tbody>'; ?>

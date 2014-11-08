@@ -17,7 +17,6 @@ class Main_page extends CI_Controller{
 		$username=$this->input->post('username');
 		$password=$this->input->post('password');
 		
-		
 		if(strlen($username)>0 && strlen($password)>0)
 		{	
 		$res4=$this->User->login($username,$password);
@@ -35,7 +34,6 @@ class Main_page extends CI_Controller{
 			$this->load->view('Error_log');
 			
 		$this->load->view('Header');
-		$this->load->view('bread');
 		//$this->load->view('Search');
 		foreach($res1 as $category)
 		{
@@ -57,7 +55,6 @@ class Main_page extends CI_Controller{
 	{
 		$this->load->view('Session_validation');
 		$this->load->view('Header');
-		$this->load->view('bread2');
 		$res1=$this->Main->productInfo($productID);
 		if(isset($res1[0]))
 		{

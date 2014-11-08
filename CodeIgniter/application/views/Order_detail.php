@@ -23,4 +23,6 @@ echo "</div><p id='orderdetailtile'  style='color:red' >* Red price means specia
 <p>
 <a id='a' href='../../../../../../../../../../CodeIgniter/index.php/Cart_controller/myOrder' data-inline='true' data-role='button' class='btn btn-primary'>Go back</a></p>
 <img id='orderimage' src='../../../../../../../../../../CodeIgniter/image/".$productImage."' width='20%' height='30%'></a></p>
+
+
 ";
