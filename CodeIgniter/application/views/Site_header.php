@@ -38,7 +38,7 @@ else
 <div data-role="page">
 <div data-role="content">
 <div class="topBar">
-<<<<<<< HEAD
+
     <div class="col-sm-5">
         <a href="/CodeIgniter/index.php/Main_page">
             <img src="/CodeIgniter/image/brandName.png" width="80%"></img>
@@ -52,9 +52,6 @@ else
     </div>
 
     <br/><br/>
-=======
-<img src="/CodeIgniter/image/brandName.png" width="70%" height="50px"></img><img src="/CodeIgniter/image/feature.png" width="30%" height="50px"></img>
-<br/><br/>
 
 <nav class="navbar navbar-default" role="navigation">
 <div class="col-sm-12">
@@ -86,6 +83,5 @@ else
 </div>
 </nav>
 
->>>>>>> 08b21fb689a4e68db3c12cdcd1d2e1e34da70c6c
 </div>
 <br/>
