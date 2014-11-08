@@ -3,12 +3,21 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>back</title>
+<style>
+	.breadcrumb {	
+					background-color:#FFFFFF;
+					color: #000000;
+					width: 150px;
+			    }
+</style>
 </head>
 
 <body>
-<ol class="breadcrumb">
-  <li><a href="/CodeIgniter/index.php/Main_page/">Home</a></li>
-<li><a href="/CodeIgniter/index.php/Main_page/">Sport</a></li>
-</ol>
+<div class="col-md-1">
+	<ol class="breadcrumb">
+		<li><a href="/CodeIgniter/index.php/Main_page/">&nbsp;&nbsp;Home</a></li>
+		<li><a href="/CodeIgniter/index.php/Main_page/">Sport</a></li>
+	</ol>
+</div>
 </body>
 </html>
