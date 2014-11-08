@@ -11,6 +11,7 @@ class Cart_controller extends CI_Controller{
 	}
 	function add($productID, $productQuantity, $productPrice)
 	{
+		$this->load->view('Session_validation');
 		$this->Cart->Add_cart($productID, $productQuantity, $productPrice);
 		$data['productID']=$productID;
 		$this->load->view('Success_add_cart',$data);

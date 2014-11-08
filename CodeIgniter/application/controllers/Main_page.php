@@ -53,7 +53,6 @@ class Main_page extends CI_Controller{
 	}
 	function info($productID)
 	{
-		$this->load->view('Session_validation');
 		$this->load->view('Header');
 		$res1=$this->Main->productInfo($productID);
 		if(isset($res1[0]))
