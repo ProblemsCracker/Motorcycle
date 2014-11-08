@@ -27,33 +27,87 @@
 <body>
 <div class="register" style="text-align:left">
 <form id="form1" name="f" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/storeCheckOut">
-<h1 align="center">Order Information</h1>
+<h1 align="center">Check Out</h1>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  
+   <div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Sign In</a></li>
+         <li class="active"><a href="#">Shipment & Delivery</a></li>
+         <li><a href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkOut2">Payment</a></li>
+         <li><a href="#">Place Order</a></li>
+      </ul>
+   </div>
+</nav>
 <h3>Shipping Information</h3>
-  <p><span style="color:red">*</span>Shipping Address:<br/>
+  <p><span style="color:red">*</span>Full Name:<br/>
+    <input type="text" name="shippingAddress" size="40"/>
+  </p>
+    <p><span style="color:red">*</span>Address Line 1:<br/>
+    <input type="text" name="shippingAddress" size="40"/>
+  </p>
+    <p><span style="color:red"></span>Address Line 2 (Optional):<br/>
+    <input type="text" name="shippingAddress" size="40"/>
+  </p>
+   <p><span style="color:red">*</span>City:<br/>
+    <input type="text" name="shippingAddress" size="40"/>
+  </p>
+   <p><span style="color:red">*</span>State / Province / Region:<br/>
     <input type="text" name="shippingAddress" size="40"/>
   </p>
    <p><span style="color:red">*</span>ZIP Code:<br/>
     <input type="text" name="shippingZipcode"  size="10" maxlength="5"/>
   </p>
-<h3>Billing Information</h3>
-  <p><span style="color:red">*</span>Card Number:<br/><input type="text" name="cardNumber" size="40" maxlength="16"/></p>
+  <p>
+             <div class="form-group">
+      <span style="color:red">*</span>Country:<br/>
+      <select class="form-control">
+         <option>United States</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+      </select>
+      </div>
+  </p>
+  <div class="checkbox">
+      <label>
+      <input type="checkbox"> Set as my Default shipping address
+      </label>
+   </div>
+
+   <h3>Delivery</h3>
+<div class="radio">
+   <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios1" 
+         value="option1" checked> Standard 3 Day: FREE
+   </label>
+</div>
+<div class="radio">
+   <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" 
+         value="option2">
+         2 Day Shipping: $10.95
+   </label>
+</div>
+<div class="radio">
+   <label>
+      <input type="radio" name="optionsRadios" id="optionsRadios2" 
+         value="option2">
+         1 Day Shipping: $16.95
+   </label>
+</div>
+<p>
+</p>
+  <input type="button" class="btn btn-primary" value="Back" onclick="goBack()" data-inline='true' data-role='button' >
+  <input type="submit" class="btn btn-primary" value="Next" data-inline='true' onclick="goPayment()" data-role='button' >
   
-  <p><span style="color:red">*</span>PIN:<br/><input type="password" name="pin" size="40"/></p>
-  <p><span style="color:red">*</span>Billing Address:<br/>
-    <input type="text" name="billingAddress" size="40"/>
-  </p>
-   <p><span style="color:red">*</span>ZIP Code:<br/>
-    <input type="text" name="billingZipcode"  size="10" maxlength="5"/>
-  </p>
-  <?php 
-  	$sum=$this->session->userdata('sum');
-  	echo '<p style="font-size:20px;">Total Price:<span style="color:red">$'.$sum.'</span></p>';
-  ?>
-  <input type="submit" value="Submit" data-inline='true' data-role='button' >
-  <input type="button" value="Back" onclick="goBack()" data-inline='true' data-role='button' >
 </form>
 </div>
 <script>
+function goPayment(){
+  window.location.href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkout2"
+}
 function goBack()
 {
 	window.location.href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/myCart";

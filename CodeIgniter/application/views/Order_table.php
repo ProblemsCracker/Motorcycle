@@ -1,9 +1,25 @@
+
 <?php
-$specialPrice=$totalPrice/$productQuantity;
-echo '<tr><td>'.$productName.'</td><td>'.$productDescription.'</td><td>'.$productCategoryName.'</td>';
-if($specialPrice!=$productPrice)
-	echo "<td style='color:red'>$ ".$specialPrice."</td>";
-else
-	echo "<td>$ ".$productPrice."</td>";
-echo '<td>'.$productQuantity.'</td><td>'.'$'.$totalPrice.'</td><td>'.$orderDate.'</td><td><a href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/orderDetail/'.$paidID.'">Detail</a></td></tr>';
+static $productNumber=123456;
+echo '
+<tr class="active">
+<td colspan="4" style="color:blue; font-weight:bold">'.$productName.'</td>
+</tr>
+
+<tr> <td><image src="../../../../../../../../../../CodeIgniter/image/'.$productImage.'">'.'</td> 
+	 
+	 <td><br><br>Order Number<br>'.$productNumber.'<br><br><br>Order Placed<br>'.$orderDate.'</td> 
+	 <td><br><br>Quantity<br>'.$productQuantity.'<br><br><br>Total Price<br>$'.$totalPrice.'</td>	 
+	 <td align="right" colspan="4"><br><br>
+		 <div> <a href="../../../../../../../../../../CodeIgniter/index.php/Main_page" class="btn btn-primary" style="width:100%" role="button">Product Page</a></div><br>
+		 <div> <a href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/orderDetail/'.$paidID.'" class="btn btn-primary" style="width:100%" role="button">Oder Detail</a></div><br>
+		 <div> <a href="../../../../../../../../../../CodeIgniter/index.php/Main_page" class="btn btn-primary" style="width:100%" role="button">Product Page</a></div>
+</tr>
+
+
+	 
+	 </td>
+</tr>
+
+'
 ?>

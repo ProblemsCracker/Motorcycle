@@ -11,6 +11,6 @@
         <?php echo "<span style='color:#F60; text-decoration:line-through'>$".$productPrice."</span><li id='special'>SALE: $".$specialPrice."</li>";?>
         <li><?php echo $productDescription?></li>
         <li id='space'>space</li>
-        <li><a href="/CodeIgniter/index.php/Main_page/info/<?php echo $productID ?>" class="btn btn-lg btn-info">Add to Cart</a></li>
+        <li><a href="/CodeIgniter/index.php/Main_page/info/<?php echo $productID ?>" class="btn btn-lg btn-info">Add Detail</a></li>
 </ul>
 
