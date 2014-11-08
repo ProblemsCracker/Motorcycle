@@ -27,29 +27,21 @@
 <body>
 <div class="register" style="text-align:left">
 
-<form id="form1" name="f" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/storeCheckOut">
+<form id="form1" name="f" class="form-horizontal" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/storeCheckOut">
 <h1 align="center">Check Out</h1>
-<nav class="navbar navbar-default navbar-static-top" role="navigation">
-  
-   <div>
-      <ul class="nav navbar-nav">
-        <li><a href="#">Sign In</a></li>
-         <li ><a href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkOut">Shipment & Delivery</a></li>
-         <li class="active" ><a>Payment</a></li>
-         <li><a href="#">Place Order</a></li>
-      </ul>
-   </div>
-</nav>
+
+<img src="/CodeIgniter/image/progress2.png" width="500px"/>
+
 <h3>Billing Information</h3>
-<p><span style="color:red">*</span>First Name:<br/><input type="text" name="cardNumber" size="40" maxlength="16"/></p>
+<p><span style="color:red">*</span>First Name:<br/><input type="text" class="form-control" name="cardNumber" size="40" maxlength="16"/></p>
   
-  <p><span style="color:red">*</span>Last Name:<br/><input type="text" name="cardNumber" size="40" maxlength="16"/></p>
+  <p><span style="color:red">*</span>Last Name:<br/><input type="text" class="form-control" name="cardNumber" size="40" maxlength="16"/></p>
   
-  <p><span style="color:red">*</span>Card Number:<br/><input type="text" name="cardNumber" size="40" maxlength="16"/></p>
+  <p><span style="color:red">*</span>Card Number:<br/><input type="text" class="form-control" name="cardNumber" size="40" maxlength="16"/></p>
   
-  <p><span style="color:red">*</span>Security Code:<br/><input type="password" name="pin" size="10"/></p>
+  <p><span style="color:red">*</span>Security Code: <img src="/CodeIgniter/image/questionmark.png" width="15px"/><br/><input type="password" class="form-control" name="pin" size="10"/></p>
   <p>
-    <div class="form-group">
+    
       <span style="color:red">*</span>Expiration Date:<br/>
       <div class="col-sm-2">
       <select class="form-control" >
@@ -69,12 +61,13 @@
          <option>2018</option>
       </select>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-7">
     </div>
 
-      </div>
+      
     </p>
-  <br/>
+
+  <br/><br/>
   <p><span style="color:red">*</span>Billing Address:<br/>
     <div class="radio">
    <label>
@@ -90,6 +83,7 @@
          Use a Different Address
    </label>
 </div>
+
   </p>
 
    <p> <div class="checkbox">
@@ -103,16 +97,20 @@
       </label>
    </div>
   </p>
-  
-  <input type="button" class="btn btn-primary" value="Back" onclick="goBack()" data-inline='true' data-role='button' >
-  <input type="submit" class="btn btn-primary" value="Next" data-inline='true' onclick="goPayment()" data-role='button' >
-  
+  <div class="col-sm-12 container">
+  <div class="col-sm-6" align="center">
+  <input type="button" class="btn btn-primary btn-lg" value="Back" onclick="goBack()" data-inline='true' data-role='button' >
+  </div>
+<div class="col-sm-6" align="center">
+  <input type="submit" class="btn btn-primary btn-lg" value="Next" data-inline='true' onclick="goPayment()" data-role='button' >
+</div>
+</div>
 </form>
 </div>
 <script>
 function goBack()
 {
-	window.location.href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/myCart";
+	window.location.href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkout";
 }
 </script>
 </body>

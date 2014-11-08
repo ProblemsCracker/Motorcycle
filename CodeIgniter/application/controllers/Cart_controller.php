@@ -55,6 +55,11 @@ class Cart_controller extends CI_Controller{
 		$this->load->view('Check_out2');	
 		$this->load->view('Site_feet');
 	}
+	function checkOut3()
+	{
+		$this->load->view('Check_out3');	
+		$this->load->view('Site_feet');
+	}
 	function storeCheckOut()
 	{
 		$customerID=$this->session->userdata('customerID');
