@@ -37,7 +37,7 @@ else
 
 <div data-role="page">
 <div data-role="content">
-<div class="topBar">
+<div>
 
     <div class="col-sm-5">
         <a href="/CodeIgniter/index.php/Main_page">
