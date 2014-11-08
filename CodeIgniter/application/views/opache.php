@@ -102,8 +102,8 @@ table {
 <div class="transbox" id="transbox1">
 <table>
 		<tr>
-			<td><img src="../image/novice.bmp"></td>
-			<td><img src="../image/expert.bmp"></td>
+			<td><img src="../image/novice.png"></td>
+			<td><img src="../image/expert.png"></td>
 		</tr>
 		<tr>
 			<td><button class="btn btn-success btn-lg " type="button" onclick=recommend()>Recommend a model for me		</button></td>
