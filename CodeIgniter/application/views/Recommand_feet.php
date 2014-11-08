@@ -7,4 +7,4 @@ echo '<ul style="clear:both;float:none"></ul><br/><br/>';
 <a data-inline='true' data-role='button'  href="../../../../../../../../../../CodeIgniter/index.php/Main_page">See More Product</a>
 </div>
 </div>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/>
