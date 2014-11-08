@@ -37,8 +37,38 @@ else
 
 <div data-role="page">
 <div data-role="content">
-<div class="topBar">
-<img src="/CodeIgniter/image/brandName.png" width="70%"></img><img src="/CodeIgniter/image/feature.png" width="30%"></img>
+<img src="/CodeIgniter/image/brandName.png" width="65%" margin-left="10%"></img><img src="/CodeIgniter/image/feature.png" width="25%"></img>
 <br/><br/>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid" style="font-size:20">
+<!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/CodeIgniter/index.php/Main_page">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Types <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#" style="font-size:16">Sport</a></li>
+            <li><a href="#" style="font-size:16">Two_seat</a></li>
+            <li><a href="#" style="font-size:16">Electronic</a></li>
+            <li><a href="#" style="font-size:16">Classic</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands <span class="caret"></span></a>
+      	  <ul class="dropdown-menu" role="menu">
+            <li><a href="#" style="font-size:16">BMW</a></li>
+            <li><a href="#" style="font-size:16">Honda</a></li>
+            <li><a href="#" style="font-size:16">Aprilia</a></li>
+            <li><a href="#" style="font-size:16">Indian</a></li>
+          </ul>
+        </li>
+	<li><a href="#">Motor Review</a></li>
+	<li><a href="#">Top10</a></li>
+	<li><a href="#">On Sale</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 </div>
 <br/>
