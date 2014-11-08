@@ -1,21 +1,21 @@
 /* CSS Document */
+
 body
 {
-background:url(back.png);
+background:url(../image/backgrounds/index_back.jpg); 
+background-size: cover;
 font-size:20px;
+position: relative;
+top: 100px;
 }
+
 .rightTop
 {
 	text-align:right;
 	width:100%;
 	font-size:20px;
 }
-.container
-{
-	margin-left:auto;
-	margin-right:auto;
-	width:960px;	
-}
+
 .register
 {
 	margin-left:auto;
@@ -38,4 +38,46 @@ font-size:20px;
 	margin-left:auto;
 	margin-right:auto;
 	width:100px;
+}
+#special
+{color:#F00;font-size:30px; font-weight:bold;}
+
+#price
+{display:none}
+
+#space
+{visibility:hidden}
+
+#product_line
+{
+	 width:16%; 
+	 text-align:center;
+	 float:left;
+}
+#orderimage{
+margin-left:400px;
+margin-top:-450px;
+}
+#orderdetail
+{
+margin-left:300px;
+}
+#orderdetailtitle
+{
+margin-left:500px;
+}
+#orderdetailtile
+{
+margin-left:1150px;
+}
+#a{
+margin-left:1200px;
+}
+.table1
+{
+ 	 text-align:center;
+}
+.main
+{
+	text-align:center;	
 }
