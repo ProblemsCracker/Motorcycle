@@ -226,19 +226,7 @@ function Confirm()
        <div role="tabpanel" class="tab-pane" id="upload">
        <link href="/CodeIgniter/css/star-rating.css" media="all" rel="stylesheet" type="text/css"/>
 		<script src="/CodeIgniter/js/star-rating.js" type="text/javascript"></script>
-        <script>
-                jQuery(document).ready(function () {
-                    $('.rating-input').rating({
-                          min: 0,
-                          max: 5,
-                          rtl: false,
-                          showCaption: true,
-                          showClear: false,
-                          size: 'sm',
-                          hoverEnabled:false,
-                       });
-                });
-        </script>
+
         <div class="container">
         	<br/>
        		<div class='well'>
@@ -294,7 +282,19 @@ function Confirm()
                     </div>
 				</div>
 			</div>
-            
+                    <script>
+                jQuery(document).ready(function () {
+                    $('.rating-input').rating({
+                          min: 0,
+                          max: 5,
+                          rtl: false,
+                          showCaption: true,
+                          showClear: false,
+                          size: 'sm',
+                          hoverEnabled:false,
+                       });
+                });
+        </script>
            </div>
        <div role="tabpanel" class="tab-pane" id="solution">
        </div>
