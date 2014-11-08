@@ -37,7 +37,21 @@ else
 
 <div data-role="page">
 <div data-role="content">
-<img src="/CodeIgniter/image/brandName.png" width="65%" margin-left="10%"></img><img src="/CodeIgniter/image/feature.png" width="25%"></img>
+
+  <div class="col-sm-4">
+  </div>
+
+  <div class="col-sm-5">
+    <a href="/CodeIgniter/index.php/Main_page">
+      <img src="/CodeIgniter/image/brandName.png" width="70%" margin-left="10%">
+      </img>
+    </a>
+  </div>
+
+  <img src="/CodeIgniter/image/feature.png" width="20%">
+  </img>
+
+
 <br/><br/>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid" style="font-size:20">

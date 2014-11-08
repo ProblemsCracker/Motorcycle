@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 	if(isset($_SESSION['success_add_cart']))
 	{
@@ -11,5 +12,16 @@
 	}
 	unset($_SESSION['success_add_cart']);
 ?>
-<h1 style="text-align:center">Guess You Like</h1>
+=======
+
 <div name="product" style="width:100%">
+<br><br>
+ 
+<div> <a href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/myCart" class="btn btn-primary" style="width:10%;margin-left:44%;" role="button">Edit cart</a></div>
+<br>
+<div> <a href="../../../../../../../../../../CodeIgniter/index.php/Main_page" class="btn btn-primary" style="width:10%;margin-left:44%;" role="button">More Motorcycles</a></div>
+<br>
+<br>
+>>>>>>> 72ad43a506fb77c0dc919bf7d70850961e351675
+<h1 style="text-align:center">Guess You Like</h1>
+<br>
