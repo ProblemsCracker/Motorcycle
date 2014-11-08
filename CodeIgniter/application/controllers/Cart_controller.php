@@ -109,12 +109,6 @@ class Cart_controller extends CI_Controller{
 			{$res[0]['specialPrice']=$res2[0]['specialPrice'];}
 		$this->load->view('Recommand_like',$res[0]);
 		
-		$res=$this->Cart->Most_popular($productID);
-		$res2=$this->Main->special($res[0]['productID']);
-		if(isset($res2[0]))
-			{$res[0]['specialPrice2']=$res2[0]['specialPrice'];}
-		$this->load->view('Recommand_popular',$res[0]);
-		
 		$this->load->view('Recommand_feet');
 		$this->load->view('Site_feet');
 	}
