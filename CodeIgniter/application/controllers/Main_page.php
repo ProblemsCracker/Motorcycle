@@ -34,7 +34,7 @@ class Main_page extends CI_Controller{
 			$this->load->view('Error_log');
 			
 		$this->load->view('Header');
-		$this->load->view('Search');
+		//$this->load->view('Search');
 		foreach($res1 as $category)
 		{
 			$this->load->view('Product_category_display',$category);
@@ -136,7 +136,7 @@ class Main_page extends CI_Controller{
 		$res=$this->Main->search($productName);
 		$this->load->view('Header');
 		$this->load->view('Search_header');
-		$this->load->view('Search');
+		//$this->load->view('Search');
 		if($res!=0)
 		{
 		foreach ($res as $item)

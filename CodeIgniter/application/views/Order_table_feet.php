@@ -1,5 +1,5 @@
 <?php
-echo '</table>';
-echo "<p style='color:red'>* Red price means special price. </p>";
-echo "<br/><div align='center'><a href='../../../../../../../../../../CodeIgniter/index.php/Main_page' data-inline='true' data-role='button' >Go back</a></div></div><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>";
+echo '</table></div>';
+echo "<br/><div style='width:200px;margin:0 auto;'> <a href='../../../../../../../../../../CodeIgniter/index.php/Main_page' class='btn btn-primary btn-lg' role='button'>Main Page</a></div><br><br><br><br><br>";
+
 ?>

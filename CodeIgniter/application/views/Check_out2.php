@@ -26,6 +26,7 @@
 
 <body>
 <div class="register" style="text-align:left">
+
 <form id="form1" name="f" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/storeCheckOut">
 <h1 align="center">Check Out</h1>
 <nav class="navbar navbar-default navbar-static-top" role="navigation">
@@ -50,24 +51,30 @@
   <p>
     <div class="form-group">
       <span style="color:red">*</span>Expiration Date:<br/>
-      <select class="col-sm-2 form-control" >
+      <div class="col-sm-2">
+      <select class="form-control" >
          <option>1</option>
          <option>2</option>
          <option>3</option>
          <option>4</option>
          <option>5</option>
       </select>
-      
-      <select class="col-sm-10 form-control" >
+     </div>
+      <div class="col-sm-3">
+      <select class="form-control" >
          <option>2014</option>
          <option>2015</option>
          <option>2016</option>
          <option>2017</option>
          <option>2018</option>
       </select>
+    </div>
+    <div class="col-sm-6">
+    </div>
+
       </div>
     </p>
-  
+  <br/>
   <p><span style="color:red">*</span>Billing Address:<br/>
     <div class="radio">
    <label>

@@ -38,6 +38,7 @@ else
 <div data-role="page">
 <div data-role="content">
 <div class="topBar">
+<<<<<<< HEAD
     <div class="col-sm-5">
         <a href="/CodeIgniter/index.php/Main_page">
             <img src="/CodeIgniter/image/brandName.png" width="80%"></img>
@@ -51,5 +52,40 @@ else
     </div>
 
     <br/><br/>
+=======
+<img src="/CodeIgniter/image/brandName.png" width="70%" height="50px"></img><img src="/CodeIgniter/image/feature.png" width="30%" height="50px"></img>
+<br/><br/>
+
+<nav class="navbar navbar-default" role="navigation">
+<div class="col-sm-12">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Types<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="/CodeIgniter/index.php/Main_page/">Sport</a></li>
+            <li><a href="#">Two_Seat</a></li>
+            <li><a href="#">Classic</a></li>
+            <li><a href="#">Electric Motor</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">BMW</a></li>
+            <li><a href="#">Honda</a></li>
+            <li><a href="#">Aprilia</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Motor Review</a></li>
+        <li><a href="#">Top10</a></li>
+</ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</div>
+</nav>
+
+>>>>>>> 08b21fb689a4e68db3c12cdcd1d2e1e34da70c6c
 </div>
 <br/>
