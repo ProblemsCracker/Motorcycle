@@ -38,7 +38,18 @@ else
 <div data-role="page">
 <div data-role="content">
 <div class="topBar">
-<img src="/CodeIgniter/image/brandName.png" width="70%"></img><img src="/CodeIgniter/image/feature.png" width="30%"></img>
-<br/><br/>
+    <div class="col-sm-5">
+        <a href="/CodeIgniter/index.php/Main_page">
+            <img src="/CodeIgniter/image/brandName.png" width="80%"></img>
+        </a>
+    </div>
+
+    <div class="col-sm-1"></div>
+
+    <div class="col-sm-5">
+        <img src="/CodeIgniter/image/feature.png" width="80%"></img>
+    </div>
+
+    <br/><br/>
 </div>
 <br/>
