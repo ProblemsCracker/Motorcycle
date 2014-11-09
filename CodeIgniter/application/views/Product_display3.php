@@ -126,13 +126,13 @@ function Confirm()
 				
 				
 				<li style="font-size:20px;">
-					<button href='#' onClick="Confirm()" type="button" class="btn btn-default">
+					<button href='#' onClick="Confirm()" type="button" class="btn btn-primary">
 						Add to Cart
 					</button>
 				</li>
 				<li style="visibility:hidden">space</li>
 				<li style="font-size:20px;">
-					<a href="../../Main_page" type="button" class="btn btn-default">
+					<a href="../../Main_page" type="button" class="btn btn-primary">
 						Go Back
 					</a>
 				</li>

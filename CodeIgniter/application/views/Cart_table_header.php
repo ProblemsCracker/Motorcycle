@@ -5,7 +5,7 @@
 <th class="success" data-priority="1">Description</th>
 <th class="success">Category</th>
 <th class="success">Unit Price</th>
-
+<th class="success">Qty</th>
 <th class="success">Total Price</th>
 <th class="success" data-priority="persist">Remove</th>
 <th class="success" data-priority="persist">Change</th>
