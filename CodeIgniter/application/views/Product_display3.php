@@ -148,14 +148,14 @@ function Confirm()
 <div>
 	<div class="container">
     <div>
-        <h2>My Profile</h2>
+        <h2>Product Profile</h2>
     </div>
     <hr/>
     <ul class="nav nav-tabs" role="tablist" id="myTab">
       <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">Detail</a></li>
       <li role="presentation"><a href="#upload" role="tab" data-toggle="tab">Feedbacks</a></li>
-      <li role="presentation"><a href="#solution" role="tab" data-toggle="tab">My Edited Videos</a></li>
-      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Settings</a></li>
+      <li role="presentation"><a href="#solution" role="tab" data-toggle="tab">Description</a></li>
+      <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">Advertisement</a></li>
     </ul>
    </div>
    <div class="tab-content">
@@ -282,7 +282,7 @@ function Confirm()
                     </div>
 				</div>
 			</div>
-                    <script>
+         <script>
                 jQuery(document).ready(function () {
                     $('.rating-input').rating({
                           min: 0,
@@ -296,7 +296,21 @@ function Confirm()
                 });
         </script>
            </div>
+            </div>
        <div role="tabpanel" class="tab-pane" id="solution">
+      
+       <div class="container">
+        <hr/>
+       <div class="well">
+       <h3>Urgent SALE, 2011 Kawasaki Vulcan 1700 Voyager Trike ++TRIGG Trike & Reverse.</h3>
+
+
+			<p>This is great bike.. I\'m selling only because I don\'t really ride much anymore. I bought it new!!! Very low miles (6511).Clean title guarantee
+Guarantees accurate mileage and that the vehicle has not been branded salvaged or flood-damaged. Or we'll buy it back. The Audace sports a more muscular posture and stands out from the other California models with its blacked-out styling, round headlight and carbon front fender. The footboards and rocker shifter were removed in favor of forward mounted pegs. The seat is lower than on the California Custom, combining with the new foot position and the drag handlebar for more stretched-out riding position. An oversized 200/65 rear tire helps complete the look.
+
+The engine is unchanged but the Euro 4-approved megaphone exhausts and a few pounds in weight saving should make the Audace quicker off the line than the rest of the California 1400 family.</p>
+         </div>
+         </div>
        </div>
        <div role="tabpanel" class="tab-pane" id="settings">
        </div>

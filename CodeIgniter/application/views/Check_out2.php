@@ -9,12 +9,12 @@
     $(document).ready(function() {
       $("#form1").validate({
         rules: {
-          shippingAddress: "required",// simple rule, converted to {required:true}
-		  shippingZipcode: { required: true, maxlength:5,  minlength:5 },
-		  cardNumber: {required: true, digits:true, maxlength:16, minlength: 16},
-		  pin: "required",
-          billingAddress: "required",
-		  billingZipcode:  { required: true, maxlength: 5,  minlength: 5 },
+          bFirstName:"required",
+          bLastName:"required",
+		  bCardNumber: {required: true, digits:true, maxlength:16, minlength: 16},
+		  bSecurity: {required: true, digits:true, maxlength:3, minlength: 3},
+      bExpMonth:"required",
+      bExpYear:"required",
         }
       });
     });
@@ -27,33 +27,41 @@
 <body>
 <div class="register" style="text-align:left">
 
-<form id="form1" name="f" class="form-horizontal" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/storeCheckOut">
+<form id="form1" name="f" class="form-horizontal" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkout3">
 <h1 align="center">Check Out</h1>
 
 <img src="/CodeIgniter/image/progress2.png" width="500px"/>
 
 <h3>Billing Information</h3>
-<p><span style="color:red">*</span>First Name:<br/><input type="text" class="form-control" name="cardNumber" size="40" maxlength="16"/></p>
+<p><span style="color:red">*</span>First Name:<br/><input type="text" class="form-control" name="bFirstName" size="40" /></p>
   
-  <p><span style="color:red">*</span>Last Name:<br/><input type="text" class="form-control" name="cardNumber" size="40" maxlength="16"/></p>
+  <p><span style="color:red">*</span>Last Name:<br/><input type="text" class="form-control" name="bLastName" size="40"/></p>
   
-  <p><span style="color:red">*</span>Card Number:<br/><input type="text" class="form-control" name="cardNumber" size="40" maxlength="16"/></p>
+  <p><span style="color:red">*</span>Card Number:<br/><input type="text" class="form-control" name="bCardNumber" size="40" maxlength="16"/></p>
   
-  <p><span style="color:red">*</span>Security Code: <img src="/CodeIgniter/image/questionmark.png" width="15px"/><br/><input type="password" class="form-control" name="pin" size="10"/></p>
+  <p><span style="color:red">*</span>Security Code: <img src="/CodeIgniter/image/questionmark.png" width="15px"/><br/><input type="password" class="form-control" name="bSecurity" size="10"/></p>
   <p>
     
       <span style="color:red">*</span>Expiration Date:<br/>
-      <div class="col-sm-2">
-      <select class="form-control" >
+      <div class="col-sm-4">
+      <select class="form-control" name="bExpMonth">
          <option>1</option>
          <option>2</option>
          <option>3</option>
          <option>4</option>
          <option>5</option>
+         <option>6</option>
+         <option>7</option>
+         <option>8</option>
+         <option>9</option>
+         <option>10</option>
+         <option>11</option>
+         <option>12</option>
+         
       </select>
      </div>
-      <div class="col-sm-3">
-      <select class="form-control" >
+      <div class="col-sm-4">
+      <select class="form-control" name="bExpYear">
          <option>2014</option>
          <option>2015</option>
          <option>2016</option>
@@ -102,7 +110,7 @@
   <input type="button" class="btn btn-primary btn-lg" value="Back" onclick="goBack()" data-inline='true' data-role='button' >
   </div>
 <div class="col-sm-6" align="center">
-  <input type="submit" class="btn btn-primary btn-lg" value="Next" data-inline='true' onclick="goPayment()" data-role='button' >
+  <input type="submit" class="btn btn-primary btn-lg" value="Next" data-inline='true'  data-role='button' >
 </div>
 </div>
 </form>
@@ -111,6 +119,10 @@
 function goBack()
 {
 	window.location.href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkout";
+}
+function goReviewOrder()
+{
+  window.location.href="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkout3";
 }
 </script>
 </body>

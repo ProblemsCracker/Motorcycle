@@ -40,10 +40,10 @@
     <br/>
     <div class="container">
      <div class="form-group">
-    <input class="btn btn-primary btn-lg" data-inline='true' data-role='button' type="submit" value="Submit">
-    <input class="btn btn-info btn-lg" data-inline='true' data-role='button' type="button" value="Register" onclick="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page/register'">
-    <input class="btn btn-danger btn-lg" data-inline='true' data-role='button' type="button" value="GoBack" onclick="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page'">
-     </div>
+    <input class="btn btn-primary" data-inline='true' data-role='button' type="submit" value="Submit">&nbsp;
+    <input class="btn btn-danger" data-inline='true' data-role='button' type="button" value="GoBack" onclick="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page'">&nbsp;&nbsp;&nbsp;&nbsp;
+	 Not a member? <a href="javascript:window.location.href='../../../../../../../../../../CodeIgniter/index.php/Main_page/register'">Go to register</a>
+	 </div>
      </div>
 </form>
 </div>

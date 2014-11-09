@@ -19,9 +19,9 @@ echo '</tr><tr><th class="success">Quantity</th><td class="success">'.$productQu
 <th class="success">Billing Address</th><td class="success">'.$billingAddress.'</td></tr><tr>
 <th class="success">Billing Zipcode</th><td class="success">'.$billingZipcode.'</td></tr>';
 echo '</table>';
-echo "</div><p id='orderdetailtile'  style='color:red' >* Red price means special price. </p>
+echo "</div><div style='margin-left:-100px'><p id='orderdetailtile'  style='color:red' >* Red price means special price. </p>
 <p>
-<a id='a' href='../../../../../../../../../../CodeIgniter/index.php/Cart_controller/myOrder' data-inline='true' data-role='button' class='btn btn-primary'>Go back</a></p>
+<a id='a' href='../../../../../../../../../../CodeIgniter/index.php/Cart_controller/myOrder' data-inline='true' data-role='button' class='btn btn-primary'>Go back</a></p></div>
 <img id='orderimage' src='../../../../../../../../../../CodeIgniter/image/".$productImage."' width='20%' height='30%'></a></p>
 
 

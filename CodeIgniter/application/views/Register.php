@@ -17,13 +17,12 @@ $(document).ready(function() {
         rules: {
           username: "required",// simple rule, converted to {required:true}
 		  password: "required",
-          email: {email: true},
+          email: "required",
 		  firstName: "required",
 		  lastName: "required",
 		  phone: {digits:true, maxlength:10, minlength: 10},
         },
         messages: {
-          email: "Enter a valid email",
 		  phone: "Enter a valid phone number",
         }
       });
@@ -31,6 +30,7 @@ $(document).ready(function() {
 </script>
   <style type="text/css">
     label.error { font-size:12px; color: red; display:block}
+	.star { color: #FF0000 }
   </style>
       <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
@@ -42,27 +42,33 @@ $(document).ready(function() {
 <div class="well">
 <form id="form1" class="form-horizontal" role="form" name='f1' method="post" action='../../../../../../../../../../CodeIgniter/index.php/Main_page/store_register'>
 <div class="form-group">
-    <label for="username" class="col-sm-2 control-label">*Username</label>
+    <label for="username" class="col-sm-2 control-label"><span class="star">*</span>Username</label>
     <div class="col-sm-12">
       <input type="text" class="form-control" placeholder="Username" name="username">
     </div>
   </div>
   <div class="form-group">
-    <label for="username" class="col-sm-2 control-label">*Password</label>
+    <label for="username" class="col-sm-2 control-label"><span class="star">*</span>Password</label>
     <div class="col-sm-12">
       <input type="text" class="form-control" placeholder="Password" name="password">
     </div>
   </div>
   <div class="form-group">
-    <label for="firstName" class="col-sm-2 control-label">*FirstName</label>
+    <label for="firstName" class="col-sm-2 control-label"><span class="star">*</span>FirstName</label>
     <div class="col-sm-12">
       <input type="text" class="form-control" placeholder="First Name" name="firstName">
     </div>
   </div>
   <div class="form-group">
-    <label for="username" class="col-sm-2 control-label">*LastName</label>
+    <label for="username" class="col-sm-2 control-label"><span class="star">*</span>LastName</label>
     <div class="col-sm-12">
       <input type="text" class="form-control" placeholder="Last Name" name="lastName">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="username" class="col-sm-2 control-label"><span class="star">*</span>EmailAddress</label>
+    <div class="col-sm-12">
+      <input type="text" class="form-control" placeholder="Email" name="email">
     </div>
   </div>
   <div class="form-group">
@@ -71,18 +77,11 @@ $(document).ready(function() {
       <input type="text" class="form-control" placeholder="Phone Number" name="phone">
     </div>
   </div>
-  <div class="form-group">
-    <label for="username" class="col-sm-2 control-label">EmailAddress</label>
-    <div class="col-sm-12">
-      <input type="text" class="form-control" placeholder="Email" name="phone">
-    </div>
-  </div>
 <br/>
 <div class="container">
-<input  type="submit" value="Save" class="btn btn-lg btn-primary">
-<input  type="button" value="Back" onclick="goBack()"  class="btn btn-lg btn-danger">
+<input type="submit" value="Save" class="btn btn-success">&nbsp;&nbsp;
+<input type="button" value="Back" onclick="goBack()"  class="btn btn-danger">
 </div>
-
 </form> 
 </div>  
 </div>

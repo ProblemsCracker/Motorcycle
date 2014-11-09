@@ -66,6 +66,8 @@ function switch2(){
 }
 body{
 	background-image: url("../image/backgrounds/background.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 div.transbox {
 /*     width: 400px; */

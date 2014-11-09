@@ -1,3 +1,3 @@
 <?php
-echo "<script>alert('Congratulation! Your order has been recorded!');window.location.href='../../../../../../../../../../CodeIgniter/index.php/Cart_controller/myOrder';</script>";
+echo "<script>window.location.href='../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkoutSuccess';</script>";
 ?>

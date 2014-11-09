@@ -11,7 +11,6 @@ class Cart_controller extends CI_Controller{
 	}
 	function add($productID, $productQuantity, $productPrice)
 	{
-		$this->load->view('Session_validation');
 		$this->Cart->Add_cart($productID, $productQuantity, $productPrice);
 		$data['productID']=$productID;
 		$this->load->view('Success_add_cart',$data);
@@ -59,22 +58,37 @@ class Cart_controller extends CI_Controller{
 	function checkOut3()
 	{
 		$this->load->view('Check_out3');	
-		$this->load->view('Site_feet');
 	}
+	
 	function storeCheckOut()
 	{
-		$customerID=$this->session->userdata('customerID');
-		$shippingAddress=$this->input->post('shippingAddress');
-		$shippingZipcode=$this->input->post('shippingZipcode');
-		$cardNumber=$this->input->post('cardNumber');
+		
+		/*$customerID=$this->session->userdata('customerID');
+		$fullName=$this->input->post('sFullName');
+		$addressLine1=$this->input->post('sAddressLine1');
+		$addressLine2=$this->input->post('sAddressLine2');
+		$city=$this->input->post('sCity');
+		$state=$this->input->post('sState');
+		$zipcode=$this->input->post('sZipcode');
+		$country=$this->input->post('sCountry');
 		$pin=$this->input->post('pin');
 		$billingAddress=$this->input->post('billingAddress');
 		$billingZipcode=$this->input->post('billingZipcode');
 		$orderDate=date("Y-m-d H:i:s");
 		$sum=$this->session->userdata('sum');
 		$result=$this->Cart->Store_order($customerID, $shippingAddress, $shippingZipcode, $cardNumber, $pin, $billingAddress, $billingZipcode, $orderDate, $sum);
-		if($result)
+		if($result)*/
 			$this->load->view('Success_checkout');
+	}
+	function checkoutSuccess(){
+		$this->load->view('Header');
+		$res=$this->Cart->My_order();
+		
+		
+		$this->load->view('checkOutSuccess');
+
+		$this->load->view('Site_feet');
+
 	}
 	function myOrder()
 	{
@@ -85,6 +99,7 @@ class Cart_controller extends CI_Controller{
 		{
 				$this->load->view('Order_table',$item);
 		}
+		
 		$this->load->view('Order_table_feet');
 		$this->load->view('Site_feet');
 	}
@@ -108,6 +123,7 @@ class Cart_controller extends CI_Controller{
 		if(isset($res2[0]))
 			{$res[0]['specialPrice']=$res2[0]['specialPrice'];}
 		$this->load->view('Recommand_like',$res[0]);
+
 		
 		$this->load->view('Recommand_feet');
 		$this->load->view('Site_feet');

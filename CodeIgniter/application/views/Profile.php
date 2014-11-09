@@ -18,13 +18,12 @@ $(document).ready(function() {
         rules: {
           username: "required",// simple rule, converted to {required:true}
 		  password: "required",
-          email: {email: true},
+          email: "required",
 		  firstName: "required",
 		  lastName: "required",
 		  phone: {digits:true, maxlength:10, minlength: 10},
         },
         messages: {
-          email: "Enter a valid email",
 		  phone: "Enter a valid phone number",
         }
       });
@@ -41,52 +40,59 @@ $(document).ready(function() {
 			border-radius: 3px;
 			border: medium;
 		  }
+	#save, #back {
+					 width: 100px;
+					 text-align: center;
+		   		 }
+	.star {
+			color: #FF0000;
+		  }
   </style>
 </head>
 <body>
 <div class="register">
-<h1 style="text-align:center"><span id="div1" style="display:none">Edit</span><span id="div2" style="display:none"> My</span><span id="div3" style="display:none"> Profile</span></h1>
+<h1 style="text-align:center"><span id="div1" style="display:none"> My</span><span id="div2" style="display:none"> Profile</span></h1>
 <div id="div4" style="display:none">
 <div class="well">
 <form class="form-horizontal" id="form1" name='f1' method="post" action='../../Main_page/store_profile'>
 <table id="mytable" class="table table-hover" align="center">
     <tr>
-		<th>*Username:</th>
+		<th><span class="star">*</span>Username:</th>
         <td><input type="text" maxlength="30" name="username" 
 		<?php
 		echo "value=".$username?>></td>
    	</tr>
 	<tr>
-		<th>*Password:</th>
+		<th><span class="star">*</span>Password:</th>
         <td><input type="password" maxlength="32" name="password"></td>
    	</tr>
 	<tr>
-		<th>*First Name:</th>
+		<th><span class="star">*</span>First Name:</th>
         <td><input type="text" maxlength="30" name="firstName" <?php
 		echo "value=".$firstName?>></td>
    	</tr>
 	<tr>
-		<th>*Last Name:</th>
+		<th><span class="star">*</span>Last Name:</th>
         <td><input type="text" maxlength="30" name="lastName"<?php	
 		echo "value=".$lastName?>></td>
-   	</tr>    
+   	</tr> 
+	<tr>
+		<th><span class="star">*</span>Email: </th>
+        <td><input type="text" name="email" maxlength="35"<?php	
+		echo "value=".$email?>></td>
+   	</tr>     
 	<tr>
 		<th>Phone Number:</th>
         <td><input type="text" name="phone" size="20" maxlength="10"<?php	
 		echo "value=".$phone?>></td>
-   	</tr>     
-  	<tr>
-		<th>Email: </th>
-        <td><input type="text" name="email" maxlength="35"<?php	
-		echo "value=".$email?>></td>
-   	</tr>  
+   	</tr>    	
 </table>
 
 <p align="center" style=" color:red;">* Required Fields</p>
 <table class="button" align="center">
-<tr><td><button type="submit" class="btn btn-success btn-lg">Save</button></td>
-<td>&nbsp;&nbsp;&nbsp;</td>
-<td><button type="button" class="btn btn-danger btn-lg" onclick="goBack()">Back</button></td></tr>
+<tr><td><button id="save" type="submit" class="btn btn-success">Save</button></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td><button id="back" type="button" class="btn btn-danger" onclick="goBack()">Back</button></td></tr>
 </table>
 </form>   
 

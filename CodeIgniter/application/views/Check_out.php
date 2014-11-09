@@ -9,12 +9,14 @@
     $(document).ready(function() {
       $("#form1").validate({
         rules: {
-          shippingAddress: "required",// simple rule, converted to {required:true}
-		  shippingZipcode: { required: true, maxlength:5,  minlength:5 },
-		  cardNumber: {required: true, digits:true, maxlength:16, minlength: 16},
-		  pin: "required",
-          billingAddress: "required",
-		  billingZipcode:  { required: true, maxlength: 5,  minlength: 5 },
+          sFullName: "required",// simple rule, converted to {required:true}
+          sAddressLine1: "required",
+          sCity:"required",
+          sState:"required",
+		  sZipcode: { required: true, maxlength:5,  minlength:5 },
+		  sCountry:"required",
+		  optionsRadios:"required",
+          
         }
       });
     });
@@ -26,42 +28,42 @@
 
 <body>
 <div class="register" style="text-align:left">
-<form id="form1" class="form-horizontal" name="f" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/storeCheckOut">
+<form id="form1" class="form-horizontal" name="f" method="post" action="../../../../../../../../../../CodeIgniter/index.php/Cart_controller/checkout2" >
 <h1 align="center">Check Out</h1>
 <img src="/CodeIgniter/image/progress1.png" width="500px"/>
 <h3>Shipping Information</h3>
   <p><span style="color:red">*</span>Full Name:<br/>
-    <input type="text"  class="form-control" name="shippingAddress" size="40"/>
+    <input type="text"  class="form-control" name="sFullName" size="40"/>
   </p>
     <p><span style="color:red">*</span>Address Line 1:<br/>
-    <input type="text" class="form-control" name="shippingAddress" size="40"/>
+    <input type="text" class="form-control" name="sAddressLine1" size="40"/>
   </p>
     <p><span style="color:red"></span>Address Line 2 (Optional):<br/>
-    <input type="text" class="form-control"  name="shippingAddress" size="40"/>
+    <input type="text" class="form-control"  name="sAddressLine2" size="40"/>
   </p>
    <p><span style="color:red">*</span>City:<br/>
-    <input type="text" class="form-control" name="shippingAddress" size="40"/>
+    <input type="text" class="form-control" name="sCity" size="40"/>
   </p>
    <p><span style="color:red">*</span>State / Province / Region:<br/>
-    <input type="text" class="form-control" name="shippingAddress" size="40"/>
+    <input type="text" class="form-control" name="sState" size="40"/>
   </p>
    <p><span style="color:red">*</span>ZIP Code:<br/>
-    <input type="text" class="form-control" name="shippingZipcode"  size="10" maxlength="5"/>
+    <input type="text" class="form-control" name="sZipcode"  size="10" maxlength="5"/>
   </p>
   <p>
       <span style="color:red">*</span>Country:<br/>
-      <select class="form-control">
+      <select class="form-control" name="sCountry">
          <option>United States</option>
-         <option>2</option>
-         <option>3</option>
-         <option>4</option>
-         <option>5</option>
+         <option>Australia</option>
+         <option>Brazil</option>
+         <option>China</option>
+         <option>Korea</option>
       </select>
       
   </p>
   <div class="checkbox">
       <label>
-      <input type="checkbox"> Set as my Default shipping address
+      <input type="checkbox" name="setDefaultShippingAddress"> Set as my Default shipping address
       </label>
    </div>
 
@@ -82,7 +84,7 @@
 <div class="radio">
    <label>
       <input type="radio" name="optionsRadios" id="optionsRadios2" 
-         value="option2">
+         value="option3">
          1 Day Shipping: $16.95
    </label>
 </div>
@@ -93,7 +95,7 @@
   <input type="button" class="btn btn-primary btn-lg" value="Back" onclick="goBack()" data-inline='true' data-role='button' >
   </div>
 <div class="col-sm-6" align="center">
-  <input type="submit" class="btn btn-primary btn-lg" value="Next" data-inline='true' onclick="goPayment()" data-role='button' >
+  <button type="submit" class="btn btn-primary btn-lg submit" data-inline='true'>Next</button>
 </div>
 </div>
 </form>
