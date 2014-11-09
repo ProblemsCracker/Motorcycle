@@ -79,7 +79,7 @@ $(document).ready(function() {
   </div>
 <br/>
 <div class="container">
-<input type="submit" value="Save" class="btn btn-success">&nbsp;&nbsp;
+<input type="submit" value="Register" class="btn btn-success">&nbsp;&nbsp;
 <input type="button" value="Back" onclick="goBack()"  class="btn btn-danger">
 </div>
 </form> 

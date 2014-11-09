@@ -3,7 +3,7 @@
 static $productNumber=123456;
 echo '
 <tr class="active">
-<td colspan="4" style="color:blue; font-weight:bold">'.$productName.'</td>
+<td colspan="4" font-weight:bold"><h2>'.$productName.'</h2></td>
 </tr>
 
 <tr> <td><image src="../../../../../../../../../../CodeIgniter/image/'.$productImage.'">'.'</td> 

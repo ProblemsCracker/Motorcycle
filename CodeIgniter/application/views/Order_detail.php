@@ -7,9 +7,9 @@ bordered,table table-striped">
 <th class="success">Description</th><td class="success">'.$productDescription.'</td></tr><tr>
 <th class="success">Unit Price</th>';
 if($specialPrice!=$productPrice)
-	echo '<td style="color:red" class="success">'.$specialPrice.'</td>';
+	echo '<td class="success">$ '.$productPrice.'</td>';
 else
-	echo '<td class="success" >$ ".$productPrice."</td>';
+	echo '<td class="success">$ '.$productPrice.'</td>';
 echo '</tr><tr><th class="success">Quantity</th><td class="success">'.$productQuantity.'</td></tr><tr>
 <th class="success">Total Price</th><td class="success">'.'$'.$totalPrice.'</td></tr><tr>
 <th class="success">Transaction Time</th><td class="success">'.$orderDate.'</td></tr><tr>

@@ -47,16 +47,19 @@ class Cart_controller extends CI_Controller{
 	}
 	function checkOut()
 	{
+		$this->load->view('Header');
 		$this->load->view('Check_out');	
 		$this->load->view('Site_feet');
 	}
 	function checkOut2()
 	{
+		$this->load->view('Header');
 		$this->load->view('Check_out2');	
 		$this->load->view('Site_feet');
 	}
 	function checkOut3()
 	{
+		$this->load->view('Header');
 		$this->load->view('Check_out3');	
 	}
 	
@@ -112,6 +115,7 @@ class Cart_controller extends CI_Controller{
 		$this->load->view('Header');
 		$res=$this->Cart->My_order_detail($paidID);
 		$this->load->view('Order_detail',$res[0]);
+		$this->load->view('Site_feet');
 	}
 	function recommand($productID)
 	{
